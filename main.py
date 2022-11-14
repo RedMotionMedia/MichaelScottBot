@@ -9,7 +9,7 @@ load_dotenv()
 
 intents = discord.Intents.default()
 intents.message_content = True
-bott = commands.Bot(command_prefix='§', intents=intents)
+bot = commands.Bot(command_prefix='§', intents=intents)
 
 
 token = os.getenv('DISCORD_BOT_TOKEN')
