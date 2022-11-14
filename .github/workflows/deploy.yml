@@ -25,3 +25,4 @@ jobs:
         OPENWEATHER_APIKEY: ${{ secrets.OPENWEATHER_APIKEY }}
         WINDY_APIKEY: ${{ secrets.WINDY_APIKEY }}
       run: python3 main.py
+    - run: sleep 10
