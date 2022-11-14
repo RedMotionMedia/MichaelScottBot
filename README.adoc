@@ -20,9 +20,9 @@
 `git clone git@github.com:RedMoitionMedia/MichaelScottBot.git`
 . Open terminal in this folder and install the requirements in the requirements.txt +
 `pip install -r requirements.txt`
-. Close VS Code and open it again +
-. Now all requirements are installed +
-. Add .env file in root directory
+. Install discord.py[voice]: +
+`pip install -U discord.py[voice]`
+. Add `.env` file in root directory
 . Add following these lines in the .env file: +
 ----
  DISCORD_BOT_TOKEN=[YOUR DISCORD BOT TOKEN]
