@@ -24,4 +24,4 @@ jobs:
         DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         OPENWEATHER_APIKEY: ${{ secrets.OPENWEATHER_APIKEY }}
         WINDY_APIKEY: ${{ secrets.WINDY_APIKEY }}
-      run: python3 main.py & sleep 10
+      run: python3 main.py
