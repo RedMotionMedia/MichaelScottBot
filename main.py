@@ -11,10 +11,6 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='§', intents=intents)
 
-DISCORD_BOTt_TOKEN = os.environ['DISCORD_BOT_TOKEN']
-
-print(DISCORD_BOT_TOKEN)
-
 
 token = os.getenv('DISCORD_BOT_TOKEN')
 openweather_apikey = os.getenv('OPENWEATHER_APIKEY')
