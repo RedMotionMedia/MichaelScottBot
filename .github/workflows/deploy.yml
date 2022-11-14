@@ -19,4 +19,9 @@ jobs:
         python-version: '3.9'
         cache: 'pip' # caching pip dependencies
     - run: pip install -r requirements.txt
-    - run: python3 main.py
+    - name: Run test
+      env:
+        DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        OPENWEATHER_APIKEY: ${{ secrets.OPENWEATHER_APIKEY }}
+        WINDY_APIKEY: ${{ secrets.WINDY_APIKEY }}
+      run: python3 main.py
