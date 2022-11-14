@@ -12,7 +12,7 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='§', intents=intents)
 
 
-token = os.getenv('DISCORD_BOT_TOKEN')
+token = os.getenv('DISCORD_BOT_TOKEN') 
 openweather_apikey = os.getenv('OPENWEATHER_APIKEY')
 windy_apikey = os.getenv('WINDY_APIKEY')
 # webcamid = "1447838456"
