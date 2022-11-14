@@ -1,4 +1,4 @@
-# Dokumentation for Spambot
+# Dokumentation for MichaelScottBot
 
 ## Commands:
 
