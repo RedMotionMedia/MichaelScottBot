@@ -1,13 +1,13 @@
-
-from ast import arg
-from queue import Empty
-from discord.ext import commands
 import discord
+from discord.ext import commands
 import requests
 import time
 
-# client = discord.Client()
-bot = commands.Bot(command_prefix='§')
+intents = discord.Intents.default()
+intents.message_content = True
+bot = commands.Bot(command_prefix='§', intents=intents)
+
+
 token = "OTYwNTE3MDc2MzMyNzA3OTcy.YkrlPA.dH9YnklhY7SuwvmNZbdGZ1Rocj0"
 openweather_apikey = "8112867c5131111875b74070e5599e38"
 windy_apikey = "TUuK42PhI7aJD0Rm2MSDhnB7IMqm5bqy"
@@ -15,7 +15,9 @@ windy_apikey = "TUuK42PhI7aJD0Rm2MSDhnB7IMqm5bqy"
 webcamid = "1665493001"
 alarm_msg = "https://tenor.com/view/danger-alert-siren-alarm-red-light-gif-16931369"
 
-
+@bot.command()
+async def ping(ctx):
+    await ctx.send('pong')
 
 @bot.event
 async def on_ready():

@@ -14,3 +14,17 @@
 . §leave
 - Will leave the voice channel you are in but does nothing yet.
 
+## Setup:
+
+. Git clone into your folder +
+`git@github.com:RedMoitionMedia/MichaelScottBot.git`
+. Open terminal in this folder and install the requirements in the requirements.txt +
+`pip install -r requirements.txt`
+. Close VS Code and open it again +
+. Now all requirements are installed +
+. Add .env file
+. Add following line as follows: +
+`DISCORD_BOT_TOKEN = [YOUR DISCORD BOT TOKEN] +
+`
+. Start main.py with the play button on the top right corner or use this command in this folder: +
+`py main.py`
