@@ -28,6 +28,7 @@
  DISCORD_BOT_TOKEN=[YOUR DISCORD BOT TOKEN]
  OPENWEATHER_APIKEY=[YOUR OPENWEATHER APIKEY]
  WINDY_APIKEY=[YOUR WINDY APIKEY]
+ DEPLOY_STATE=true
 ----
 . Start main.py with the play button on the top right corner or use this command in this folder: +
 Windows: +

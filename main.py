@@ -98,7 +98,8 @@ async def leave(ctx):
     await ctx.voice_client.disconnect()
 
 
-bot.run(token)
+if(os.getenv('DEPLOY_STATE') == 'true'):
+    bot.run(token)
 
 
 
