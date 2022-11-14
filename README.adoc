@@ -24,8 +24,10 @@
 . Now all requirements are installed +
 . Add .env file
 . Add following line as follows: +
-`DISCORD_BOT_TOKEN = [YOUR DISCORD BOT TOKEN] +
- OPENWEATHER_APIKEY = [YOUR OPENWEATHER APIKEY] + 
- WINDY_APIKEY = [YOUR WINDY APIKEY]`
+----
+ DISCORD_BOT_TOKEN=[YOUR DISCORD BOT TOKEN]
+ OPENWEATHER_APIKEY=[YOUR OPENWEATHER APIKEY]
+ WINDY_APIKEY=[YOUR WINDY APIKEY]
+----
 . Start main.py with the play button on the top right corner or use this command in this folder: +
 `py main.py`

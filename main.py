@@ -2,15 +2,19 @@ import discord
 from discord.ext import commands
 import requests
 import time
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='§', intents=intents)
 
 
-token = "OTYwNTE3MDc2MzMyNzA3OTcy.YkrlPA.dH9YnklhY7SuwvmNZbdGZ1Rocj0"
-openweather_apikey = "8112867c5131111875b74070e5599e38"
-windy_apikey = "TUuK42PhI7aJD0Rm2MSDhnB7IMqm5bqy"
+token = os.getenv('DISCORD_BOT_TOKEN')
+openweather_apikey = os.getenv('OPENWEATHER_APIKEY')
+windy_apikey = os.getenv('WINDY_APIKEY')
 # webcamid = "1447838456"
 webcamid = "1665493001"
 alarm_msg = "https://tenor.com/view/danger-alert-siren-alarm-red-light-gif-16931369"
