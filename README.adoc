@@ -1,0 +1,16 @@
+# Dokumentation for Spambot
+
+## Commands:
+
+. §spam [user-id] [int] [body]
+- Will spam a person. 
+- [user-id] -> is the person with which should be in the same server as you. Can be used with @ mentioning. 
+- [int] -> is the amount how many times the person will be spamed. [0-99]
+- [body] -> Can be a custom message. Default: Alarm with image.
+. §nordpol
+- Shows the temperature and a image of the nordpol.
+. §join
+- Will join the voice channel you are in but does nothing yet.
+. §leave
+- Will leave the voice channel you are in but does nothing yet.
+
