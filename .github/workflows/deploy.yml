@@ -13,7 +13,7 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           name: id_rsa # optional
-          knowm_hosts: ${{ secrets.SSH_HOST }}
+          known_hosts: ${{ secrets.SSH_HOST }}
           if_key_exists: fail # replace / ignore / fail; optional (default to fail)
       - name:  Pull
         run: ssh marcelreit@1.1.1.1 "cd /home/redryder/ && /usr/bin/git pull origin main"
