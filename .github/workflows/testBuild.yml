@@ -1,29 +1,26 @@
-name: Test Build
+name: Tests
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches:
       - main
 
 jobs:
   build:
-  
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
-        cache: 'pip' # caching pip dependencies
-    - run: pip install -r requirements.txt
-    - name: Run test
-      env:
-        DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
-        OPENWEATHER_APIKEY: ${{ secrets.OPENWEATHER_APIKEY }}
-        WINDY_APIKEY: ${{ secrets.WINDY_APIKEY }}
-        DEPLOY_STATE: ${{ secrets.DEPLOY_STATE }}
-      timeout-minutes: 1
-      run: python3 main.py
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip' # caching pip dependencies
+      - run: pip install -r requirements.txt
+      - name: Run test
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          OPENWEATHER_APIKEY: ${{ secrets.OPENWEATHER_APIKEY }}
+          WINDY_APIKEY: ${{ secrets.WINDY_APIKEY }}
+          DEPLOY_STATE: ${{ secrets.DEPLOY_STATE }}
+        timeout-minutes: 1
+        run: python3 main.py
