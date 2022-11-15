@@ -18,4 +18,4 @@ jobs:
       - name:  Pull
         timeout-minutes: 1
         continue-on-error: true
-        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /home/redryder/MichaelScottBot/ && /usr/bin/git pull origin main && python3 main.py & disown"
+        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /home/redryder/ && sh michaelScottBot.sh"
