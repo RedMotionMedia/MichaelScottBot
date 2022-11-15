@@ -42,7 +42,7 @@ async def on_ready():
     for guild in bot.guilds:
         if guild.name == "Duisburg-Calais Logistics":
             for channel in guild.text_channels :
-                if str(channel) == "die-einzig-wahren-memez" :
+                if str(channel) == "der-einzig-wahre-bottester" :
                     await channel.send("MichaelScottBot is online. That's what she said!")
                     await channel.send(file=discord.File('michaelScottBot.gif'))
             print('Active in {}\n Member Count : {}'.format(guild.name,guild.member_count))
