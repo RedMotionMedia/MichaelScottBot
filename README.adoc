@@ -40,7 +40,7 @@ Default Message: `§spam @mentionedUser 10`
 ## Setup:
 
 - Git clone into your folder +
-`git clone git@github.com:RedMoitionMedia/MichaelScottBot.git`
+`git clone https://github.com/RedMoitionMedia/MichaelScottBot.git`
 - Open terminal in this folder and install the requirements in the requirements.txt +
 `pip install -r requirements.txt`
 - Open terminal in this folder and install on requirement by hand: +
