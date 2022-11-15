@@ -43,8 +43,11 @@ Default Message: `§spam @mentionedUser 10`
 `git clone git@github.com:RedMoitionMedia/MichaelScottBot.git`
 - Open terminal in this folder and install the requirements in the requirements.txt +
 `pip install -r requirements.txt`
-- Close VS Code and open it again +
-- Now all requirements are installed +
+- Open terminal in this folder and install on requirement by hand: +
+. Linux/maxOS: + 
+`pip install -U "discord.py[voice]"` +
+. Windows: +
+`pip install -U discord.py[voice]`
 - Add .env file in root directory
 - Add following these lines in the .env file: +
 ----
@@ -55,13 +58,13 @@ Default Message: `§spam @mentionedUser 10`
 ----
 
 - Install ffmpeg: +
+    . Linux/maxOS: +
+        `sudo apt-get install ffmpeg` +
     . Windows: +
-        https://phoenixnap.com/kb/ffmpeg-windows +
-    . Linux: +
-        `sudo apt-get install ffmpeg`
+        https://phoenixnap.com/kb/ffmpeg-windows
 
 - Start main.py with the play button on the top right corner or use this command in this folder: 
+    . Linux/maxOS: + 
+    `python3 main.py` +
     . Windows: +
-    `py main.py` +
-    . Linux: + 
-    `python3 main.py`
+    `py main.py`
