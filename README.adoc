@@ -2,36 +2,66 @@
 
 ## Commands:
 
-. §spam [user-id] [int] [body]
+. `§ping`
+- Find out yourself.
+. `§server_info`
+- Will display all the infos about the server he is in.
+. `§spam [user-id] [int] [body]`
 - Will spam a person. 
-- [user-id] -> is the person with which should be in the same server as you. Can be used with @ mentioning. 
+- [user-id] -> is the person you want to spam. He should be in the same server as you are. This property can be used with the mentioning feature of discord -> @mentionedUser 
 - [int] -> is the amount how many times the person will be spamed. [0-99]
-- [body] -> Can be a custom message. Default: Alarm with image.
-. §nordpol
+- [body] -> Can be a custom message in double quotes. Default: Alarm with image.
+- Examples: +
+Custom Message: `§spam @mentionedUser 10 "This is spam!!!"` +
+Default Message: `§spam @mentionedUser 10`
+. `§nordpol`
 - Shows the temperature and a image of the nordpol.
-. §join
-- Will join the voice channel you are in but does nothing yet.
-. §leave
-- Will leave the voice channel you are in but does nothing yet.
+. `§join`
+- Will join the voice channel you are in and wait on further instructions.
+. `§play [yt-url]`
+- Will play a song from YouTube after long download time.
+- If there is a song currently playing it will be added to the queue.
+- [yt-url] -> URL from YouTube
+- Example: +
+`§play https://www.youtube.com/watch?v=IIrCDAV3EgI`
+. `§skip`
+- Will skip the current song and will go to the next song in the queue.
+. `§stop`
+- Will stop playing the current song and will the Bot will stay in the voice channel you are in.
+. `§pause`
+- Will pause the current playing song.
+. `§resume`
+- Will resume the last paused song.
+. `§skipq`
+- Will skip all songs in the queue.
+. `§leave`
+- Will leave the voice channel you are in.
 
 ## Setup:
 
-. Git clone into your folder +
+- Git clone into your folder +
 `git clone git@github.com:RedMoitionMedia/MichaelScottBot.git`
-. Open terminal in this folder and install the requirements in the requirements.txt +
+- Open terminal in this folder and install the requirements in the requirements.txt +
 `pip install -r requirements.txt`
-. Close VS Code and open it again +
-. Now all requirements are installed +
-. Add .env file in root directory
-. Add following these lines in the .env file: +
+- Close VS Code and open it again +
+- Now all requirements are installed +
+- Add .env file in root directory
+- Add following these lines in the .env file: +
 ----
- DISCORD_BOT_TOKEN=[YOUR DISCORD BOT TOKEN]
- OPENWEATHER_APIKEY=[YOUR OPENWEATHER APIKEY]
- WINDY_APIKEY=[YOUR WINDY APIKEY]
- DEPLOY_STATE=true
+    DISCORD_BOT_TOKEN=[YOUR DISCORD BOT TOKEN]
+    OPENWEATHER_APIKEY=[YOUR OPENWEATHER APIKEY]
+    WINDY_APIKEY=[YOUR WINDY APIKEY]
+    DEPLOY_STATE=true
 ----
-. Start main.py with the play button on the top right corner or use this command in this folder: +
-Windows: +
-`py main.py` +
-Linux: + 
-`python3 main.py`
+
+- Install ffmpeg: +
+    . Windows: +
+        https://phoenixnap.com/kb/ffmpeg-windows +
+    . Linux: +
+        `sudo apt-get install ffmpeg`
+
+- Start main.py with the play button on the top right corner or use this command in this folder: 
+    . Windows: +
+    `py main.py` +
+    . Linux: + 
+    `python3 main.py`
