@@ -16,4 +16,4 @@ jobs:
           known_hosts: ${{ secrets.SSH_HOST }}
           if_key_exists: fail # replace / ignore / fail; optional (default to fail)
       - name:  Pull
-        run: ssh marcelreit@1.1.1.1 "cd /home/redryder/ && /usr/bin/git pull origin main"
+        run: ssh redryder@86.56.192.216 "cd /home/redryder/ && /usr/bin/git pull origin main"
