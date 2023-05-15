@@ -15,7 +15,7 @@ load_dotenv()
 
 
 intents = discord.Intents.default()
-intents.message_content = True
+intents.messages = True
 # intents = discord.Intents().all()
 # client = discord.Client(intents=intents)
 
